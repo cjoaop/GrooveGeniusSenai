@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrooveGenius.Pages.LoginPage"
+                        xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+           NavigationPage.HasNavigationBar="False"
+           BackgroundColor="#1D1D1D">
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        <Image HeightRequest="250" WidthRequest="250" Source="logo"  Margin="19"/>
+
+        <Label x:Name="lblEmail" Text="Email:" TextColor="White" FontSize="Subtitle"/>
+        <Entry x:Name="txtEmail" Placeholder="exemplo@gmail.com" Keyboard="Email" TextColor="White"/>
+
+        <Label x:Name="lblSenha" Text="Senha:" TextColor="White" FontSize="Subtitle"/>
+        <Entry x:Name="txtSenha" Placeholder="sua senha" IsPassword="True" TextColor="White"/>
+
+        <Button x:Name="btnEnter" Text="ENTRAR" TextColor="Black" FontAttributes="Bold" WidthRequest="320" BackgroundColor="#a628dc" Clicked="btnEnter_Clicked"/>
+
+
+        <Label Text="não tem conta?" HorizontalOptions="Center" TextColor="White" FontFamily="InterLight" FontSize="18" Margin="18,0,0,0"/>
+        <Label HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="cadastre-se" TextDecorations="Underline" TextColor="#7064F8" FontFamily="InterExtraBold" FontSize="16">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="LabelClicada"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+    </VerticalStackLayout>
+</ContentPage>

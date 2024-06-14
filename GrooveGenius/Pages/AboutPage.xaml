@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrooveGenius.Pages.AboutPage"
+             BackgroundColor="#202020"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <FlexLayout Direction="Row" 
+            JustifyContent="SpaceBetween"
+            AlignItems="Center"
+            Padding="10"
+            Margin="20">
+
+            <ImageButton Source="about"
+                 WidthRequest="50"
+                 HeightRequest="50"
+                 Clicked="aboutApp" />
+
+            <ImageButton Source="profile"
+                 WidthRequest="50"
+                 HeightRequest="50"
+                 Clicked="profile" />
+
+        </FlexLayout>
+        <Button Text="voltar" Clicked="Button_Clicked" BackgroundColor="Transparent" FontSize="16" Margin="10,10,0,0" HorizontalOptions="Start"/>
+
+        <Label Text="SOBRE NÓS:" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" FontSize="36"/>
+        
+        <StackLayout Padding="20" BackgroundColor="#202020" Orientation="Horizontal" >
+            <!-- Left border -->
+            <BoxView WidthRequest="5" HeightRequest="300" Color="Purple" VerticalOptions="FillAndExpand" Margin="0,0,10,0" />
+
+            <!-- Text content -->
+            <StackLayout Padding="10" BackgroundColor="#202020" >
+                <Label TextColor="White"  FontSize="16"  Text='“No SESI SENAI de Brotas, um grupo de ' />
+                <Label TextColor="White"  FontSize="16"  Text='estudantes apaixonados por música se ' />
+                <Label TextColor="White"  FontSize="16"  Text='uniu para criar algo especial durante uma ' />
+                <Label TextColor="White"  FontSize="16"  Text='aula de empreendedorismo. Inspirados ' />
+                <Label TextColor="White"  FontSize="16"  Text='por sua paixão pela música e pela vontade ' />
+                <Label TextColor="White"  FontSize="16"  Text='de torná-la mais acessível, eles deram vida ' />
+                <Label TextColor="White"  FontSize="16"  Text='ao Groove Genius. Combinando suas ' />
+                <Label TextColor="White"  FontSize="16"  Text='habilidades técnicas e criativas, eles ' />
+                <Label TextColor="White"  FontSize="16"  Text='transformaram a sala de aula em um ' />
+                <Label TextColor="White"  FontSize="16"  Text='laboratório de inovação. Agora, o Groove ' />
+                <Label TextColor="White"  FontSize="16"  Text='Genius é um aplicativo de streaming de ' />
+                <Label TextColor="White"  FontSize="16"  Text='música que reflete sua jornada de ' />
+                <Label TextColor="White"  FontSize="16"  Text='colaboração, amizade e determinação."' />
+            </StackLayout>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

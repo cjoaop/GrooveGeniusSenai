@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrooveGenius.Pages.CadUserPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1D1D1D">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Image HeightRequest="250" WidthRequest="250" Source="logo"  Margin="19"/>
+
+
+        <Label x:Name="lblName" Text="Nome:" TextColor="White" FontSize="Subtitle"/>
+        <Entry x:Name="txtName" Text="{Binding Name}" Placeholder="Seu Nome" TextColor="White"  Keyboard="Text"/>
+
+        <Label x:Name="lblEmail" Text="Email:" TextColor="White" FontSize="Subtitle"/>
+        <Entry x:Name="txtEmail" Text="{Binding Email}" Placeholder="exemplo@gmail.com" TextColor="White"  Keyboard="Email"/>
+
+        <Label x:Name="lblSenha" Text="Senha:" TextColor="White" FontSize="Subtitle"/>
+        <Entry x:Name="txtSenha" Text="{Binding Password}" Placeholder="sua senha" TextColor="White"  IsPassword="True" Margin="0,0,0,20"/>
+
+        <Button x:Name="btnCad" Text="ENTRAR" TextColor="Black" FontAttributes="Bold" WidthRequest="320" BackgroundColor="#a628dc" FontFamily="InterExtraBold" Clicked="btnCad_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
